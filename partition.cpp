@@ -397,7 +397,7 @@ bool TWPartition::Is_File_System(string File_System) {
 
 bool TWPartition::Is_Image(string File_System) {
 	if (File_System == "emmc" ||
-		File_System == "mtd")
+		File_System == "bml")
 		return true;
 	else
 		return false;
