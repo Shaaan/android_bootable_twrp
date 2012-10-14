@@ -437,7 +437,7 @@ void TWPartition::Setup_Image(bool Display_Error) {
 	Backup_Name = Display_Name;
 	if (Fstab_File_System == "emmc")
 		Backup_Method = DD;
-	else if (Fstab_File_System == "mtd")
+	else if (Fstab_File_System == "bml")
 		Backup_Method = FLASH_UTILS;
 	else
 		LOGI("Unhandled file system '%s' on image '%s'\n", Fstab_File_System.c_str(), Display_Name.c_str());
